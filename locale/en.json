@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Delta ISPSoft PLC",
+    "description": "Read and edit Delta ISPSoft .isp projects: inspect POUs and symbols, patch ST, generate ladder self-lock programs, export and verify projects."
+  }
+}

@@ -1,0 +1,6 @@
+# dsh-delta-isp bundle patch.
+# The row name resolves from the profile's node_modules, where
+# `plugin_manager install_bundle` linked this package.
+- insert:
+    - id: delta-isp
+      name: dsh-delta-isp

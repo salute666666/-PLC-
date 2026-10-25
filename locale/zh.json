@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "台达 ISPSoft PLC 助手",
+    "description": "读写台达 ISPSoft .isp 工程：查询 POU/符号、改写 ST、生成梯形图自锁程序、导出并校验工程。"
+  }
+}

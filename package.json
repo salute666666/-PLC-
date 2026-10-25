@@ -1,0 +1,56 @@
+{
+  "name": "dsh-delta-isp",
+  "version": "0.2.1",
+  "description": "DeepSeek Harness plugin for Delta ISPSoft PLC projects: read, patch ST, create ladder self-lock POUs, rebuild .isp.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "python/src/**",
+    "python/pyproject.toml",
+    "python/README.md",
+    "docs/**",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+    }
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plc",
+    "delta",
+    "ispsoft",
+    "ladder",
+    "industrial-automation"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "win32"
+  ],
+  "scripts": {
+    "test": "node test/harness.mjs",
+    "check": "node --check index.js"
+  }
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "delta-isp-mcp"
+version = "0.2.1"
+description = "Delta ISPSoft .isp engine: container codec, project model, ST patch, ladder templates, MCP server."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.0", "pydantic>=2"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+delta-isp = "delta_isp_mcp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+delta_isp_mcp = ["templates/*.network"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
